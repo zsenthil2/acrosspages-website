@@ -360,7 +360,7 @@ document.head.appendChild(script)
 
               <div className="bg-slate-50 px-6 py-4 text-center border-t border-slate-200">
                 <p className="text-slate-600 text-sm mb-4">
-                  Don't see your language? Contact us - we're always adding new languages.
+                  Don&apos;t see your language? Contact us - we&apos;re always adding new languages.
                 </p>
                 <button
                   onClick={closeModal}
@@ -445,8 +445,8 @@ document.head.appendChild(script)
             <div className="mt-12 max-w-3xl mx-auto">
               <div className="bg-white/5 backdrop-blur-sm border border-amber-400/20 rounded-lg p-6">
                 <blockquote className="text-slate-200 text-lg italic mb-4">
-                  "AcrossPages transformed our publishing timeline. What used to take months now takes hours, 
-                  without compromising the literary quality our readers expect."
+                  &quot;AcrossPages transformed our publishing timeline. What used to take months now takes hours, 
+                  without compromising the literary quality our readers expect.&quot;
                 </blockquote>
                 <div className="text-amber-300 font-semibold">
                   — International Publishing House, London
