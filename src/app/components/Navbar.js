@@ -25,8 +25,7 @@ export default function Navbar() {
           {/* Desktop Navigation */}
           <div className="hidden lg:block">
             <div className="ml-10 flex items-baseline space-x-6">
-              <Link 
-                href="/services" 
+              <Link href="/services" 
                 className="text-slate-600 hover:text-amber-600 px-3 py-2 text-sm font-medium transition duration-200"
               >
                 Services
