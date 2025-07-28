@@ -1,3 +1,5 @@
+// Test commit to confirm git is working
+
 'use client';
 
 import { useState } from 'react';
