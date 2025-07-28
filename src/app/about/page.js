@@ -1,6 +1,8 @@
 'use client';
 
-import Navbar from '../../components/Navbar';
+import Navbar from '../components/Navbar';
+
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-amber-50">

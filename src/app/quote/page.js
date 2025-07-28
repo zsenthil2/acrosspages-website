@@ -1,7 +1,7 @@
 'use client'; // Add this if using App Router (Next.js 13+)
 
 import { useState } from 'react';
-import Navbar from '../../components/Navbar';
+import Navbar from '../components/Navbar';
 
 export default function QuotePage() {
   const [pairCounter, setPairCounter] = useState(0);
