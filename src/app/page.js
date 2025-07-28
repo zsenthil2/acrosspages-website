@@ -11,43 +11,40 @@ export default function Home() {
 
   // Add this useEffect
   useEffect(() => {
-    document.title = 'AcrossPages - AI Book Translation Service'
-    
-    // Update meta description
-    let metaDescription = document.querySelector('meta[name="description"]')
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Authors, go global. Publishers, bring world-class titles home instantly—no quality compromises. AI-powered book translations that preserve literary style.')
-    } else {
-      metaDescription = document.createElement('meta')
-      metaDescription.name = 'description'
-      metaDescription.content = 'Authors, go global. Publishers, bring world-class titles home instantly—no quality compromises. AI-powered book translations that preserve literary style.'
-      document.head.appendChild(metaDescription)
-    }
-  }, [])
-
-
-
-
-  // Add this to your useEffect
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "AcrossPages",
-  "description": "AI-powered book translation service",
-  "applicationCategory": "BusinessApplication",
-  "operatingSystem": "Web",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD",
-    "description": "Free translation sample"
+  document.title = 'AcrossPages - AI Book Translation Service'
+  
+  // Update meta description
+  let metaDescription = document.querySelector('meta[name="description"]')
+  if (metaDescription) {
+    metaDescription.setAttribute('content', 'Authors, go global. Publishers, bring world-class titles home instantly—no quality compromises. AI-powered book translations that preserve literary style.')
+  } else {
+    metaDescription = document.createElement('meta')
+    metaDescription.name = 'description'
+    metaDescription.content = 'Authors, go global. Publishers, bring world-class titles home instantly—no quality compromises. AI-powered book translations that preserve literary style.'
+    document.head.appendChild(metaDescription)
   }
-}
 
-const script = document.createElement('script')
-script.type = 'application/ld+json'
-script.textContent = JSON.stringify(schema)
-document.head.appendChild(script)
+  // Add schema markup
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AcrossPages",
+    "description": "AI-powered book translation service",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "description": "Free translation sample"
+    }
+  }
+
+  const script = document.createElement('script')
+  script.type = 'application/ld+json'
+  script.textContent = JSON.stringify(schema)
+  document.head.appendChild(script)
+}, [])
 
 
 
