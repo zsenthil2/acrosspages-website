@@ -1,6 +1,7 @@
 'use client'
 
 import Navbar from '../components/Navbar.js'
+import Footer from '../components/Footer'
 
 export default function Services() {
   return (
@@ -416,6 +417,7 @@ export default function Services() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

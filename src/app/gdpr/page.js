@@ -1,6 +1,10 @@
 'use client';
 
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
+
+
 export default function GDPRPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-amber-50">
@@ -268,61 +272,8 @@ export default function GDPRPage() {
       </div>
 
       {/* Footer */}
-      <div className="w-full bg-gradient-to-br from-slate-50 to-amber-50 border-t border-slate-200">
-        <div className="w-4/5 mx-auto py-16 px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            
-            {/* Brand Column */}
-            <div className="lg:col-span-1">
-              <div className="mb-6">
-                <h3 className="text-2xl font-serif font-bold text-slate-800 mb-4 flex items-center">
-                  📚 AcrossPages
-                </h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
-                  AI-powered book translation service that preserves literary style and cultural authenticity.
-                </p>
-              </div>
-            </div>
-            
-            {/* Navigation */}
-            <div>
-              <h4 className="text-slate-800 font-semibold mb-4">Navigation</h4>
-              <ul className="space-y-3 text-sm">
-                <li><a href="/" className="text-slate-600 hover:text-amber-600 transition duration-200">Home</a></li>
-                <li><a href="/about" className="text-slate-600 hover:text-amber-600 transition duration-200">About</a></li>
-                <li><a href="/faq" className="text-slate-600 hover:text-amber-600 transition duration-200">FAQ</a></li>
-                <li><a href="/contact" className="text-slate-600 hover:text-amber-600 transition duration-200">Contact</a></li>
-              </ul>
-            </div>
-            
-            {/* Support */}
-            <div>
-              <h4 className="text-slate-800 font-semibold mb-4">Support</h4>
-              <ul className="space-y-3 text-sm">
-                <li><a href="#help" className="text-slate-600 hover:text-amber-600 transition duration-200">Help Center</a></li>
-                <li><a href="/quote" className="text-slate-600 hover:text-amber-600 transition duration-200">Get Quote</a></li>
-              </ul>
-            </div>
-            
-            {/* Legal */}
-            <div>
-              <h4 className="text-slate-800 font-semibold mb-4">Legal</h4>
-              <ul className="space-y-3 text-sm">
-                <li><a href="/privacy" className="text-slate-600 hover:text-amber-600 transition duration-200">Privacy Policy</a></li>
-                <li><a href="/terms" className="text-slate-600 hover:text-amber-600 transition duration-200">Terms of Service</a></li>
-                <li><a href="/gdpr" className="text-slate-600 hover:text-amber-600 transition duration-200">GDPR</a></li>
-              </ul>
-            </div>
-          </div>
-          
-          {/* Bottom Bar */}
-          <div className="border-t border-slate-300 pt-8 text-center">
-            <div className="text-slate-600 text-sm">
-              © 2025 Ailaysa Technologies Pvt Ltd. All rights reserved.
-            </div>
-          </div>
-        </div>
-      </div>
+      
+      <Footer />
     </div>
   )
 }
