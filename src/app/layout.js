@@ -1,4 +1,6 @@
-import './globals.css'
+// src/app/layout.js
+import './globals.css';
+import SessionWrapper from './components/SessionWrapper';
 
 export const metadata = {
   title: 'AcrossPages - AI Book Translation Service',
@@ -14,14 +16,16 @@ export const metadata = {
     title: 'AcrossPages - AI Book Translation Service',
     description: 'Authors, go global. Publishers, bring world-class titles home instantly—no quality compromises.',
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased">
-        {children}
+        <SessionWrapper>
+          {children}
+        </SessionWrapper>
       </body>
     </html>
-  )
+  );
 }
